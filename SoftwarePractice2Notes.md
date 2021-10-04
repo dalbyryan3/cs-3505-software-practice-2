@@ -187,7 +187,7 @@ If you keep a filename in a std::string, the only issue you'll have is that when
       - It is easier to pass around a reference to an object than to copy the object into a parameter.
   - Reference behavior in C++ is similar to the behavior in Java and C#, with some exception
 - Remember that many operators in C/C++ are overloaded, thus depending on the context operators may have different behavior. i.e. * and &
-  - For many cases spaces don't matter with placing of * and &, just relative location, just be consistent. For example `std::istream& operator>> (std::istream &in, Point &point){}` has & in slightly different places although spacing doesn't matter for & just its relative location. A common pattern would be to put & "on" the parameter names (think initializing multiple parameters, may want to associate & with each one) and if not a parameter name then "on" the type.
+  - For many cases spaces don't matter with placing of * and &, just relative location, just be consistent. For example `std::istream& operator>> (std::istream &in, Point &point){}` has & in slightly different places although spacing doesn't matter for & just its relative location. A common pattern would be to put & "on" the parameter names (think initializing multiple parameters, may want to associate & with each one) and just being consistent throughout.
 
 - Syntax for pointers (can you spot the bug?):
   - `person *p; // A memory address of a person struct'`
